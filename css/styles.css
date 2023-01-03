@@ -339,7 +339,7 @@ h3 {
 
 /* ! Modal */
 .modal {
-  /* display: none; */
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -355,6 +355,16 @@ h3 {
   background: #fff;
   color: #333;
   position: relative;
+  animation: modalopen 1s;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .modal-body {
